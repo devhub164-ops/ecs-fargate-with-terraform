@@ -11,8 +11,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "btc-terraform-state-bucket2"
-    key          = "terraform/state/terraform.tfstate"
+    bucket       = "devhub164-state-demo"
+    key          = "s3-github-actions/ecs-demo.tfstate"
     region       = "us-east-1"
     encrypt      = true
     use_lockfile = true # Enable S3 native locking
